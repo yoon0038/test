@@ -1,50 +1,68 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f8ff; /* AliceBlue */
+    font-family: 'Comic Sans MS', 'Chalkduster', 'Arial', sans-serif;
+    background-color: lightyellow;
     margin: 0;
     padding: 0;
-    color: #333;
+    color: #5C4033; /* Dark Brown */
 }
 
 h1 {
     text-align: center;
-    color: #00509e; /* Darker blue */
+    color: #D00000; /* Dark Red */
     padding: 20px 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
 }
 
-#gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 20px;
+h2 {
+    color: #E53935; /* Lighter Red / Dark Orange */
+    margin-top: 30px;
 }
 
-#gallery img {
-    max-width: 30%;
-    margin: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
-}
-
-#facts {
-    padding: 20px;
+#game-info, #download-links {
+    padding: 15px;
     margin: 20px;
-    background-color: #e6f2ff; /* Lighter blue */
+    background-color: #fffacd; /* LemonChiffon, slightly different from body */
+    border: 2px solid #f0e68c; /* Khaki */
     border-radius: 8px;
-    border: 1px solid #b3d9ff; /* Light blue border */
+    box-shadow: 3px 3px 6px rgba(0,0,0,0.1);
 }
 
-#facts h2 {
-    color: #00509e; /* Darker blue */
+/* Basic styling for images that will be added later */
+img {
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto;
+    display: block; /* To enable margin auto to center block elements */
+    margin: 20px auto; /* Add some space around images and center them if they are narrower than container */
+    border: 3px solid #D00000; /* Red border, matching h1 */
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.15);
 }
 
-#facts ul {
-    list-style-type: disc;
-    padding-left: 20px;
-}
-
-#facts li {
-    margin-bottom: 10px;
+/* Styling for paragraphs within the info sections for better readability */
+#game-info p {
     line-height: 1.6;
+    text-align: justify;
+}
+
+/* Styling for lists, if any are added to download-links later */
+#download-links ul {
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 0;
+}
+
+#download-links li {
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: #fff;
+    border-left: 5px solid #D00000; /* Red accent */
+}
+
+#download-links a {
+    text-decoration: none;
+    color: #5C4033; /* Dark Brown */
+    font-weight: bold;
+}
+
+#download-links a:hover {
+    color: #D00000; /* Dark Red on hover */
 }
