@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* AliceBlue */
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #00509e; /* Darker blue */
+    padding: 20px 0;
+}
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+#gallery img {
+    max-width: 30%;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+#facts {
+    padding: 20px;
+    margin: 20px;
+    background-color: #e6f2ff; /* Lighter blue */
+    border-radius: 8px;
+    border: 1px solid #b3d9ff; /* Light blue border */
+}
+
+#facts h2 {
+    color: #00509e; /* Darker blue */
+}
+
+#facts ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+#facts li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
